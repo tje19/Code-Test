@@ -70,9 +70,21 @@ namespace Code_Test
         */
         public bool checkIfPalindrome(string word)
         {
-            word = reduceWord(word);
-            string wordReversed = reverseWord(word);
-            return word.Equals(wordReversed);
+            try
+            {
+                word = reduceWord(word);
+                string wordReversed = reverseWord(word);
+                return word.Equals(wordReversed);
+            }
+            catch (ArgumentException)
+            {
+                throw;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+
         }
         
         /*
@@ -80,11 +92,21 @@ namespace Code_Test
         */
         public bool checkIfPalindrome(int interger)
         {
-            interger = Math.Abs(interger);
+            try
+            {
+                interger = Math.Abs(interger);
+                int intergerReversed = reverseInt(interger);
+                return (interger == intergerReversed);
+            }
+            catch (ArgumentException)
+            {
+                throw;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
 
-            int intergerReversed = reverseInt(interger);
-            
-            return (interger == intergerReversed);
         }
     }
 }
