@@ -5,7 +5,7 @@ using System.Text;
 namespace API_Usage_Challenge
 {
     /*The class PersonClass has been given it's own file to avoid clutter*/
-    class PersonClass
+    public class PersonClass
     {
         public string name { get; set; }
         public string height { get; set; }

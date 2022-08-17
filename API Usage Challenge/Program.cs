@@ -52,7 +52,7 @@ namespace API_Usage_Challenge
      person. Internally the methode handles checkking if the person is already stored 
      loaclly or needs to be retrived. I've also made sure that if an index with no person
      tied to it is called it returns an exception and is logged*/
-    class ApiCalls
+    public class ApiCalls
     {
         private PersonClass[] local = new PersonClass[82];
         string detailNotFound = "\"detail\":\"Not found\"";

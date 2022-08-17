@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Palindrome Challenge", "Cod
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API Usage Challenge", "API Usage Challenge\API Usage Challenge.csproj", "{B6357784-8EAE-4144-90DE-0BAF231F4EF5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Threding Challenge", "Threding Challenge\Threding Challenge.csproj", "{22AAB3B9-0DF7-44CE-9ED6-EE5681B562E9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{B6357784-8EAE-4144-90DE-0BAF231F4EF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B6357784-8EAE-4144-90DE-0BAF231F4EF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B6357784-8EAE-4144-90DE-0BAF231F4EF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22AAB3B9-0DF7-44CE-9ED6-EE5681B562E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22AAB3B9-0DF7-44CE-9ED6-EE5681B562E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22AAB3B9-0DF7-44CE-9ED6-EE5681B562E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22AAB3B9-0DF7-44CE-9ED6-EE5681B562E9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
