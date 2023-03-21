@@ -2,10 +2,8 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace API_Usage_Challenge
-{
-    /*The class PersonClass has been given it's own file to avoid clutter*/
-    public class PersonClass
+namespace Model
+{    public class Person
     {
         public string name { get; set; }
         public string height { get; set; }
