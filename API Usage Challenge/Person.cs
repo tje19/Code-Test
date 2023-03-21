@@ -5,6 +5,7 @@ using System.Text;
 namespace Model
 {    public class Person
     {
+        public int Id { get; set; }
         public string name { get; set; }
         public string height { get; set; }
         public string mass { get; set; }

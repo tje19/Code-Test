@@ -6,6 +6,8 @@ using System.Text.Json;
 using System.Collections.Generic;
 using Service;
 using Gateways;
+using Model;
+using System.Linq;
 
 namespace Service
 {
@@ -16,16 +18,28 @@ namespace Service
         {
             Service service = new Service();
 
+            List<Person> cache = new List<Person>();
+            Person respons = null;
+
+
             while (true)
             {
+                respons = null;
                 Console.Write("Type the id\n>>>");
                 try
                 {
-                    int id = Convert.ToInt32(Console.ReadLine());
+                    int _id = Convert.ToInt32(Console.ReadLine());
 
-                    Console.WriteLine(service.GetPerson(id).name);
+                    respons = cache.Find(x => x.Id == _id);
 
-                    Console.WriteLine(service.GetPerson(id).name);
+                    if (respons == null)
+                    {
+                        respons = service.GetPerson(_id);
+                        respons.Id= _id;
+                        cache.Add(respons);
+                    }
+
+                    Console.WriteLine(respons.name);
 
                 }
                 catch (Exception ex)
